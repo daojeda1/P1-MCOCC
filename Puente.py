@@ -224,7 +224,7 @@ def Puente():
     ret.agregar_barra(Barra(80, 81, circular_200_4)) #80
 
     opcionesnodos = {
-        "marcador_nodos": "o", 
+        "marcador_nodos": ".", 
         "ver_numeros_de_nodos": False,
         "color_nodos": "k",
         "color_borde_nodos": [0.7,0.7,0.7],
@@ -238,7 +238,7 @@ def Puente():
     opcionesbarras = {
         "estilo_barras" : "-",
         "color_barras" : [138/255,89/255,0/255],#8F652F
-        "grosor_barras" : 2,
+        "grosor_barras" : 1,
         "ver_numeros_de_barras" : False,
         "color_barras_por_dato" : False,
         "ver_dato_en_barras" : False,
@@ -251,11 +251,11 @@ def Puente():
         "factor_amplificacion_deformada": 1.,
         "datos_desplazamientos_nodales": None,
         "ver_secciones_en_barras": False,
-        "color_barras_por_seccion": False,
+        "color_barras_por_seccion": True,
     }
     return(ver_reticulado_3d(ret,ver_nodos=True,
     ver_barras=True, zoom = 300, opciones_nodos = opcionesnodos,
-    opciones_barras = opcionesbarras,tamaño_nueva_figura = [9, 9]), print(ret))
+    opciones_barras = opcionesbarras,tamaño_nueva_figura = [8, 8]), print(ret))
 
 Puente()
 # ver_reticulado_3d(ret)
