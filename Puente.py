@@ -159,7 +159,7 @@ def Puente():
     ret.agregar_barra(Barra(36, 37, circular_200_4)) #18
     ret.agregar_barra(Barra(38, 39, circular_200_4)) #19
     ret.agregar_barra(Barra(40, 41, circular_200_4)) #20
-    
+
     ret.agregar_barra(Barra(0, 2, circular_200_4)) #21
     ret.agregar_barra(Barra(2, 4, circular_200_4)) #22
     ret.agregar_barra(Barra(4, 6, circular_200_8)) #23
