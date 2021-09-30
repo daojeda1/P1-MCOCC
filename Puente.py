@@ -110,26 +110,26 @@ def Puente():
     
     #Tablero(medios):
     
-    ret.agregar_nodo(1*L/2,B/2,19.18+H)        # Nodo 82
-    ret.agregar_nodo(3*L/2,B/2,19.18+H)        # Nodo 83
-    ret.agregar_nodo(5*L/2,B/2,19.18+H)        # Nodo 84
-    ret.agregar_nodo(7*L/2,B/2,19.18+H)        # Nodo 85
-    ret.agregar_nodo(9*L/2,B/2,19.18+H)        # Nodo 86
-    ret.agregar_nodo(11*L/2,B/2,19.18+H)        # Nodo 87
-    ret.agregar_nodo(13*L/2,B/2,19.18+H)        # Nodo 88
-    ret.agregar_nodo(15*L/2,B/2,19.18+H)        # Nodo 89
-    ret.agregar_nodo(17*L/2,B/2,19.18+H)        # Nodo 90
-    ret.agregar_nodo(19*L/2,B/2,19.18+H)        # Nodo 91
-    ret.agregar_nodo(21*L/2,B/2,19.18+H)        # Nodo 92
-    ret.agregar_nodo(23*L/2,B/2,19.18+H)        # Nodo 93
-    ret.agregar_nodo(25*L/2,B/2,19.18+H)        # Nodo 94
-    ret.agregar_nodo(27*L/2,B/2,19.18+H)        # Nodo 95
-    ret.agregar_nodo(29*L/2,B/2,19.18+H)        # Nodo 96
-    ret.agregar_nodo(31*L/2,B/2,19.18+H)        # Nodo 97
-    ret.agregar_nodo(33*L/2,B/2,19.18+H)        # Nodo 98
-    ret.agregar_nodo(35*L/2,B/2,19.18+H)        # Nodo 99
-    ret.agregar_nodo(37*L/2,B/2,19.18+H)        # Nodo 100
-    ret.agregar_nodo(39*L/2,B/2,19.18+H)        # Nodo 101
+    ret.agregar_nodo(1*L/2,B/2,19.18)        # Nodo 82
+    ret.agregar_nodo(3*L/2,B/2,19.18)        # Nodo 83
+    ret.agregar_nodo(5*L/2,B/2,19.18)        # Nodo 84
+    ret.agregar_nodo(7*L/2,B/2,19.18)        # Nodo 85
+    ret.agregar_nodo(9*L/2,B/2,19.18)        # Nodo 86
+    ret.agregar_nodo(11*L/2,B/2,19.18)        # Nodo 87
+    ret.agregar_nodo(13*L/2,B/2,19.18)        # Nodo 88
+    ret.agregar_nodo(15*L/2,B/2,19.18)        # Nodo 89
+    ret.agregar_nodo(17*L/2,B/2,19.18)        # Nodo 90
+    ret.agregar_nodo(19*L/2,B/2,19.18)        # Nodo 91
+    ret.agregar_nodo(21*L/2,B/2,19.18)        # Nodo 92
+    ret.agregar_nodo(23*L/2,B/2,19.18)        # Nodo 93
+    ret.agregar_nodo(25*L/2,B/2,19.18)        # Nodo 94
+    ret.agregar_nodo(27*L/2,B/2,19.18)        # Nodo 95
+    ret.agregar_nodo(29*L/2,B/2,19.18)        # Nodo 96
+    ret.agregar_nodo(31*L/2,B/2,19.18)        # Nodo 97
+    ret.agregar_nodo(33*L/2,B/2,19.18)        # Nodo 98
+    ret.agregar_nodo(35*L/2,B/2,19.18)        # Nodo 99
+    ret.agregar_nodo(37*L/2,B/2,19.18)        # Nodo 100
+    ret.agregar_nodo(39*L/2,B/2,19.18)        # Nodo 101
 
 
 
@@ -181,26 +181,26 @@ def Puente():
     ret.agregar_barra(Barra(36, 38, circular_200_4)) #39
     ret.agregar_barra(Barra(38, 40, circular_200_4)) #40
     
-    ret.agregar_barra(Barra(0, 2, circular_200_4)) #41
-    ret.agregar_barra(Barra(2, 4, circular_200_4)) #42
-    ret.agregar_barra(Barra(4, 6, circular_200_8)) #43
-    ret.agregar_barra(Barra(6, 8, circular_200_8)) #44
-    ret.agregar_barra(Barra(8, 10, circular_200_4)) #45
-    ret.agregar_barra(Barra(10,12, circular_200_4)) #46
-    ret.agregar_barra(Barra(12, 14, circular_200_8)) #47
-    ret.agregar_barra(Barra(14, 16, circular_200_4)) #48
-    ret.agregar_barra(Barra(16, 18, circular_200_4)) #49
-    ret.agregar_barra(Barra(18, 20, circular_200_8)) #50
-    ret.agregar_barra(Barra(20, 22, circular_200_4)) #51
-    ret.agregar_barra(Barra(22, 24, circular_200_4)) #52
-    ret.agregar_barra(Barra(24, 26, circular_200_8)) #53
-    ret.agregar_barra(Barra(26, 28, circular_200_4)) #54
-    ret.agregar_barra(Barra(28, 30, circular_200_4)) #55
-    ret.agregar_barra(Barra(30, 32, circular_200_4)) #56
-    ret.agregar_barra(Barra(32, 34, circular_200_4)) #57
-    ret.agregar_barra(Barra(34, 36, circular_200_4)) #58
-    ret.agregar_barra(Barra(36, 38, circular_200_4)) #59
-    ret.agregar_barra(Barra(38, 40, circular_200_4)) #60
+    ret.agregar_barra(Barra(1, 3, circular_200_4)) #41
+    ret.agregar_barra(Barra(3, 5, circular_200_4)) #42
+    ret.agregar_barra(Barra(5, 7, circular_200_8)) #43
+    ret.agregar_barra(Barra(7, 9, circular_200_8)) #44
+    ret.agregar_barra(Barra(9, 11, circular_200_4)) #45
+    ret.agregar_barra(Barra(11,13, circular_200_4)) #46
+    ret.agregar_barra(Barra(13, 15, circular_200_8)) #47
+    ret.agregar_barra(Barra(15, 17, circular_200_4)) #48
+    ret.agregar_barra(Barra(17, 19, circular_200_4)) #49
+    ret.agregar_barra(Barra(19, 21, circular_200_8)) #50
+    ret.agregar_barra(Barra(21, 23, circular_200_4)) #51
+    ret.agregar_barra(Barra(23, 25, circular_200_4)) #52
+    ret.agregar_barra(Barra(25, 27, circular_200_8)) #53
+    ret.agregar_barra(Barra(27, 29, circular_200_4)) #54
+    ret.agregar_barra(Barra(29, 31, circular_200_4)) #55
+    ret.agregar_barra(Barra(31, 33, circular_200_4)) #56
+    ret.agregar_barra(Barra(33, 35, circular_200_4)) #57
+    ret.agregar_barra(Barra(35, 37, circular_200_4)) #58
+    ret.agregar_barra(Barra(37, 39, circular_200_4)) #59
+    ret.agregar_barra(Barra(39, 41, circular_200_4)) #60
     
     ret.agregar_barra(Barra(42, 43, circular_200_4)) #61
     ret.agregar_barra(Barra(44, 45, circular_200_8)) #62
