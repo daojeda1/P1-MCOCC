@@ -55,7 +55,8 @@ opcionesbarras = {
         "color_barras_por_seccion": False,
     }
     # return(ver_reticulado_3d
-ver_reticulado_3d(ret,opciones_nodos=opcionesnodos,opciones_barras=opcionesbarras)
+ver_reticulado_3d(ret,opciones_nodos=opcionesnodos,opciones_barras=opcionesbarras,ver_nodos=True)
+    # ver_barras=True)
 
 
 

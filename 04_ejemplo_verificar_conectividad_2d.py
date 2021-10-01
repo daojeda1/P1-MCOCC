@@ -6,6 +6,7 @@ from math import sqrt
 from secciones import Circular
 from Puente import Puente
 L = 2.*m_
+import numpy as np
 
 #Inicializar modelo
 # ret = Reticulado()
@@ -57,21 +58,40 @@ f = ret.obtener_fuerzas()
 print(ret)
 
 #Visualizar resultados de fuerzas y nodos 
-opciones_nodos = {
-	"usar_posicion_deformada": True,
-	"factor_amplificacion_deformada": 2e3,
-}
-
-opciones_barras = {
-	"color_barras_por_dato": True,
-	"ver_dato_en_barras" : True,
-	"dato": f,
-	"ver_fuerza_en_barras" : True
-}
+opcionesnodos = {
+        "marcador_nodos": "o", 
+        "ver_numeros_de_nodos": False,
+        "color_nodos": "k",
+        "color_borde_nodos": [0.7,0.7,0.7],
+        "usar_posicion_deformada": False,
+        "factor_amplificacion_deformada": 1.,
+        "datos_desplazamientos_nodales": None,
+        "ver_cargas": False
+    }
+    
+    #Opciones para nodos
+opcionesbarras = {
+        "estilo_barras" : "-",
+        "color_barras" : [138/255,89/255,0/255],#8F652F
+        "grosor_barras" : 2,
+        "ver_numeros_de_barras" : False,
+        "color_barras_por_dato" : False,
+        "ver_dato_en_barras" : False,
+        "formato_dato_en_barras" : "4.2f",
+        "color_barra_min" : np.array([1, 0, 0]),
+        "color_barra_max" : np.array([0, 0, 1]),
+        "color_barra_cero" : np.array([0, 0, 0]),
+        "color_fondo" : np.array([1, 1, 1, 0.5]),
+        "usar_posicion_deformada": False,
+        "factor_amplificacion_deformada": 1.,
+        "datos_desplazamientos_nodales": None,
+        "ver_secciones_en_barras": False,
+        "color_barras_por_seccion": False,
+    }
 
 ver_reticulado_2d(ret, 
-	opciones_nodos=opciones_nodos, 
-	opciones_barras=opciones_barras)
+	opciones_nodos=opcionesnodos, 
+	opciones_barras=opcionesbarras)
 
 Kff = ret.Kff
 
@@ -86,7 +106,7 @@ modo = 0
 
 ret.u[ret.gdl_libres] = v[:,modo]
 opciones_nodos = {
-	"usar_posicion_deformada": True,
+	"usar_posicion_deformada": False,
 	"factor_amplificacion_deformada": 0.4,
 }
-ver_reticulado_2d(ret, opciones_nodos=opciones_nodos)
+ver_reticulado_2d(ret, opciones_nodos=opcionesnodos)
