@@ -509,7 +509,7 @@ ver_reticulado_3d(ret,opciones_barras=opciones_barras, opciones_nodos = opciones
 
 
 #Resolver el problema peso_propio
-ret.ensamblar_sistema(factor_peso_propio=[0.,0.,-1.])#, factor_cargas=0.0)
+ret.ensamblar_sistema(factor_peso_propio=[0.,0.,-1.], factor_cargas=0.0)
 ret.resolver_sistema()
 f_D = ret.obtener_fuerzas()
 import sys
