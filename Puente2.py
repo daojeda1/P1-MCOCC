@@ -488,11 +488,12 @@ def Puente():
         "ver_secciones_en_barras": False,
         "color_barras_por_seccion": True,
     }
-    return(ver_reticulado_3d(ret,ver_nodos=True,
-    ver_barras=True, zoom = 300, opciones_nodos = opcionesnodos,
-    opciones_barras = opcionesbarras,tamaño_nueva_figura = [8, 8]), print(ret))
+    return(ret)
+    # return(ver_reticulado_3d(ret,ver_nodos=True,
+    # ver_barras=True, zoom = 300, opciones_nodos = opcionesnodos,
+    # opciones_barras = opcionesbarras,tamaño_nueva_figura = [8, 8]), print(ret))
 
-Puente()
+# Puente()
 # ver_reticulado_3d(ret)
 
 

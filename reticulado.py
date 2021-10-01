@@ -109,7 +109,34 @@ class Reticulado(object):
 
                 self.gdl_global = self.Ndimensiones*nodo + gdl
                 self.f[self.gdl_global] = factor_cargas*valor
+    # def ensamblar_sistema(self, factor_peso_propio = [0., 0., 0.]):
+        
+    #     self.Ngdl = self.Nnodos * self.Ndimensiones
+        
+    #     self.K = np.zeros((self.Ngdl,self.Ngdl), dtype=np.double)
+    #     self.f = np.zeros((self.Ngdl), dtype=np.double)
+    #     self.u = np.zeros((self.Ngdl), dtype=np.double)
+    #     self.fpeso = factor_peso_propio
 
+    #     #Ensamblar rigidez y vector de cargas
+    #     for i,barra in enumerate(self.barras):
+    #         Ke = barra.obtener_rigidez(self)
+    #         fe = barra.obtener_vector_de_cargas(self)
+
+    #         ni = barra.obtener_conectividad()[0]
+    #         nj = barra.obtener_conectividad()[1]
+                       
+            
+    #         d = [3*ni, 3*ni+1, 3*ni+2, 3*nj, 3*nj+1, 3*nj+2]
+            
+
+    #         for i in range(self.Ndimensiones*2):
+    #             p = d[i]
+    #             for j in range(self.Ndimensiones*2):
+    #                 q = d[j]
+    #                 self.K[p,q] += Ke[i,j]
+    #             if factor_peso_propio != [0., 0., 0.]:
+    #                 self.f[p] += fe[i]
 
 
     def resolver_sistema(self):
