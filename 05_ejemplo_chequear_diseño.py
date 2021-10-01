@@ -32,11 +32,11 @@ Puente()
 
 #Secciones de las barras
 
-# seccion_grande = SeccionICHA("[]350x150x37.8", color="#3A8431")#, debug=True)
-# seccion_chica = SeccionICHA("[]80x40x8", color="#A3500B")
+seccion_grande = SeccionICHA("[]350x150x37.8", color="#3A8431")#, debug=True)
+seccion_chica = SeccionICHA("[]80x40x8", color="#A3500B")
 
 
-#Crear y agregar las barras
+# Crear y agregar las barras
 # ret.agregar_barra(Barra(0, 1, seccion_chica)) #0
 # ret.agregar_barra(Barra(1, 2, seccion_chica)) #1
 # ret.agregar_barra(Barra(3, 4, seccion_grande)) #2
