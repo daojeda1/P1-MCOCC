@@ -4,11 +4,12 @@ from graficar3d import ver_reticulado_3d
 from constantes import *
 from math import sqrt
 from secciones import SeccionICHA
-
+from Puente import Puente
+import numpy as np
 import sys
 
 
-ret = Reticulado()
+ret = Puente()
 
 
 nombre_archivo = "05_ejemplo_chequear_diseño.h5"
@@ -23,16 +24,38 @@ ret.abrir(nombre_archivo)
 
 
 
-opciones_nodos = {
-	"ver_cargas": True,
-}
-
-#Visualizar y comprobar las secciones
-opciones_barras = {
-	# "ver_secciones_en_barras": True,
-	"color_barras_por_seccion": True,
-}
-ver_reticulado_3d(ret,opciones_nodos=opciones_nodos,opciones_barras=opciones_barras)
+opcionesnodos = {
+        "marcador_nodos": "o", 
+        "ver_numeros_de_nodos": False,
+        "color_nodos": "k",
+        "color_borde_nodos": [0.7,0.7,0.7],
+        "usar_posicion_deformada": False,
+        "factor_amplificacion_deformada": 1.,
+        "datos_desplazamientos_nodales": None,
+        "ver_cargas": False
+    }
+    
+    #Opciones para nodos
+opcionesbarras = {
+        "estilo_barras" : "-",
+        "color_barras" : [138/255,89/255,0/255],#8F652F
+        "grosor_barras" : 2,
+        "ver_numeros_de_barras" : False,
+        "color_barras_por_dato" : False,
+        "ver_dato_en_barras" : False,
+        "formato_dato_en_barras" : "4.2f",
+        "color_barra_min" : np.array([1, 0, 0]),
+        "color_barra_max" : np.array([0, 0, 1]),
+        "color_barra_cero" : np.array([0, 0, 0]),
+        "color_fondo" : np.array([1, 1, 1, 0.5]),
+        "usar_posicion_deformada": False,
+        "factor_amplificacion_deformada": 1.,
+        "datos_desplazamientos_nodales": None,
+        "ver_secciones_en_barras": False,
+        "color_barras_por_seccion": False,
+    }
+    # return(ver_reticulado_3d
+ver_reticulado_3d(ret,opciones_nodos=opcionesnodos,opciones_barras=opcionesbarras)
 
 
 

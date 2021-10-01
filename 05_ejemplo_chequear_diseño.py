@@ -15,7 +15,7 @@ q = 400*kgf_/m_**2
 F = B*L*q
 
 #Inicializar modelo
-ret = Reticulado()
+# ret = Reticulado()
 
 #Nodos
 # ret.agregar_nodo(0    ,0,0)

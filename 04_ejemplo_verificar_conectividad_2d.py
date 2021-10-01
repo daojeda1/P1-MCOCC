@@ -4,32 +4,32 @@ from graficar2d import ver_reticulado_2d
 from constantes import *
 from math import sqrt
 from secciones import Circular
-
+from Puente import Puente
 L = 2.*m_
 
 #Inicializar modelo
-ret = Reticulado()
+# ret = Reticulado()
 
-#Nodos
-ret.agregar_nodo(0,0)
-ret.agregar_nodo(L,0)
-ret.agregar_nodo(2*L,0)
-ret.agregar_nodo(L/2,sqrt(3)/L)
-ret.agregar_nodo(3*L/2,sqrt(3)/L)
+# #Nodos
+# ret.agregar_nodo(0,0)
+# ret.agregar_nodo(L,0)
+# ret.agregar_nodo(2*L,0)
+# ret.agregar_nodo(L/2,sqrt(3)/L)
+# ret.agregar_nodo(3*L/2,sqrt(3)/L)
 
-#Secciones de las barras
-circular_200_4 = Circular(200*mm_, 4*mm_)
-circular_200_8 = Circular(200*mm_, 8*mm_)
+# #Secciones de las barras
+# circular_200_4 = Circular(200*mm_, 4*mm_)
+# circular_200_8 = Circular(200*mm_, 8*mm_)
 
-#Crear y agregar las barras
-ret.agregar_barra(Barra(0, 1, circular_200_4)) #0
-ret.agregar_barra(Barra(1, 2, circular_200_4)) #1
-ret.agregar_barra(Barra(3, 4, circular_200_8)) #2
-ret.agregar_barra(Barra(0, 3, circular_200_8)) #3
-# ret.agregar_barra(Barra(3, 1, circular_200_4)) #4
-ret.agregar_barra(Barra(1, 4, circular_200_4)) #5
-ret.agregar_barra(Barra(4, 2, circular_200_8)) #6
-
+# #Crear y agregar las barras
+# ret.agregar_barra(Barra(0, 1, circular_200_4)) #0
+# ret.agregar_barra(Barra(1, 2, circular_200_4)) #1
+# ret.agregar_barra(Barra(3, 4, circular_200_8)) #2
+# ret.agregar_barra(Barra(0, 3, circular_200_8)) #3
+# # ret.agregar_barra(Barra(3, 1, circular_200_4)) #4
+# ret.agregar_barra(Barra(1, 4, circular_200_4)) #5
+# ret.agregar_barra(Barra(4, 2, circular_200_8)) #6
+ret = Puente()
 #Crear restricciones
 ret.agregar_restriccion(0, 0, 0)
 ret.agregar_restriccion(0, 1, 0)

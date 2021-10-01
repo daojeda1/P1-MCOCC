@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Oct  1 11:39:09 2021
+
+@author: diego
+"""
 from numpy import pi, sqrt, nan
 from numpy.random import rand
 from constantes import g_, ρ_acero, mm_
