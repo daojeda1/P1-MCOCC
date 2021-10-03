@@ -33,10 +33,24 @@ class Barra(object):
         xj : Arreglo numpy de dimenson (3,) con coordenadas del nodo j
         """
         L = self.calcular_largo(reticulado)
-        w = self.seccion.peso()
+        w = float(self.seccion.peso())
 
         return w*L
 
+    # def calcular_area(self):
+    #     return float(self.seccion.area())
+    
+    
+    # def calcular_peso(self, reticulado):
+    #     """Devuelve el largo de la barra. 
+    #     xi : Arreglo numpy de dimenson (3,) con coordenadas del nodo i
+    #     xj : Arreglo numpy de dimenson (3,) con coordenadas del nodo j
+    #     """
+        
+    #     L = self.calcular_largo(reticulado)
+    #     A = self.calcular_area()
+    #     # return  self.calcular_area()* L * g_*ρ_acero
+    #     return ρ_acero *A * L * g_
 
 
 
